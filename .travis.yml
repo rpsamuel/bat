@@ -11,13 +11,7 @@ matrix:
       env: TOXENV=py35
     - python: "3.6"
       env: TOXENV=py36
-[testenv:coveralls]
- deps =
-     coveralls
-+passenv = TRAVIS TRAVIS_JOB_ID TRAVIS_BRANCH
- usedevelop = true
- commands =
-     coverage combine
+
 before_install:
   - sudo apt-get update -qq
   - python --version
