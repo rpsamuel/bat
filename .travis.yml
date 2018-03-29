@@ -20,7 +20,7 @@ before_install:
   - uname -a
   - lsb_release -a
 install:
-  - pip install tox-travis 
+  - pip install tox 
 script:
   - tox -e $(echo py$TRAVIS_PYTHON_VERSION | tr -d .)
  # - tox -e $TOXENV
